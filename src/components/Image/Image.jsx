@@ -20,12 +20,16 @@ const Image = props => {
     },
     textTop: {
       color: "white",
-      fontSize: 50,
+      'font-family': 'Impact, Charcoal, sans-serif',
+      '-webkit-text-stroke': '1px black',  
+      fontSize: '4em',
       fontWeight: "bold",
     },
     textBottom: {
       color: "white",
-      fontSize: 50,
+      'font-family': 'Impact, Charcoal, sans-serif',
+      '-webkit-text-stroke': '1px black',
+      fontSize: '4em',
       fontWeight: "bold"
     }
   });
