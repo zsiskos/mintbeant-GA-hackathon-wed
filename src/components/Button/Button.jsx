@@ -2,7 +2,10 @@ import React from 'react';
 
 const Button = props => {
   return (
-    <button>Generate</button>
+    <div>
+      <button>Generate</button>
+      <button>New Image</button>
+    </div>
   )
 }
 

@@ -7,8 +7,8 @@ const Image = props => {
 
   const styles = StyleSheet.create({
     container: {
-      height: '50vh',
-      width: '90vw',
+      height: '150px',
+      width: 'auto',
       flex: 1,
       flexDirection: "column",
       justifyContent: 'center'
@@ -22,14 +22,14 @@ const Image = props => {
       color: "white",
       'font-family': 'Impact, Charcoal, sans-serif',
       '-webkit-text-stroke': '1px black',  
-      fontSize: '4em',
+      fontSize: '2rem',
       fontWeight: "bold",
     },
     textBottom: {
       color: "white",
       'font-family': 'Impact, Charcoal, sans-serif',
       '-webkit-text-stroke': '1px black',
-      fontSize: '4em',
+      fontSize: '2rem',
       fontWeight: "bold"
     }
   });

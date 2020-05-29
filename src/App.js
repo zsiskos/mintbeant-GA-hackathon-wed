@@ -8,8 +8,8 @@ class App extends Component {
   constructor(){
     super();
     this.state = {
-      topText: "top",
-      bottomText: "bottom",
+      topText: "top text",
+      bottomText: "bottom text",
     };
   }
 
@@ -23,7 +23,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="header">
-          hello
+          make a meme
         </div>
         <div className="image">
           <Image

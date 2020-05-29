@@ -10,11 +10,13 @@ class Inputs extends Component {
       <div>
         <input
           className='topTextInput'
+          value={this.props.topText}
           name='topText'
           onChange={this.handleChangeInput}
           />
         <input
           className='bottomTextInput'
+          value={this.props.bottomText}
           name='bottomText'
           onChange={this.handleChangeInput}
           />
