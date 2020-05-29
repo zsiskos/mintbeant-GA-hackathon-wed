@@ -9,7 +9,7 @@
   ". inputs ." 5em
   ". button ." 2em
   ". . . " auto
-  "footer footer footer" 2em
+  "footer footer footer" 3em
   /1fr 6fr 1fr
 }
 
@@ -42,4 +42,19 @@ Input {
 
 .footer {
   grid-area: footer;
+  background-color: transparent;
+}
+
+.footer > a {
+  text-decoration: none;
+  font-family: 'Pacifico', cursive;
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.footer > a:hover {
+  text-decoration: none;
+  font-family: 'Pacifico', cursive;
+  color: #454687;
 }

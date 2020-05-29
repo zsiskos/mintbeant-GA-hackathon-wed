@@ -81,7 +81,7 @@ class App extends Component {
           />
         </div>
         <div className="footer">
-          footer
+          <a href="https://github.com/zsiskos/mintbeant-GA-hackathon-wed" target="_blank">Built by zoë.Supernova </a>
         </div>
       </div>
     );
