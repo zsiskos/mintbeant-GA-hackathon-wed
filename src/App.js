@@ -8,9 +8,31 @@ class App extends Component {
   constructor(){
     super();
     this.state = {
+      images: [],
+      currentImage: '',
       topText: "top text",
       bottomText: "bottom text",
+      isLoaded: false
     };
+  }
+
+  componentDidMount() {
+    fetch("https://api.imgflip.com/get_memes")
+      .then(res => res.json())
+      .then(
+        (result) => {
+          this.setState({
+            isLoaded: true,
+            images: result.data.memes
+          });
+        },
+        (error) => {
+          this.setState({
+            error
+          });
+        }
+      )
+      
   }
 
   changeInput = (event) => {
@@ -18,6 +40,13 @@ class App extends Component {
       [event.target.name]: event.target.value
     })
   }
+
+  clearState = (event) => {
+    this.setState({
+      [event.target.name]: ""
+    })
+  }
+ 
 
   render() {
     return (
@@ -33,9 +62,10 @@ class App extends Component {
           />
         </div>
         <div className="inputs">
-          <Inputs 
+          <Inputs
             bottomText={this.state.bottomText}
             topText={this.state.topText}
+            onFocus={this.clearState} 
             changeInput={this.changeInput}
           />
         </div>

@@ -32,6 +32,9 @@
 .inputs {
   grid-area: inputs;
 }
+Input {
+  margin: 0.25rem;
+}
 
 .button {
   grid-area: button;

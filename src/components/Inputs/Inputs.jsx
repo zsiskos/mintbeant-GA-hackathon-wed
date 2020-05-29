@@ -5,6 +5,10 @@ class Inputs extends Component {
     this.props.changeInput(event);
   }
 
+  handleFocus = (event) => {
+    this.props.clearState(event);
+  }
+
   render () {
     return (
       <div>
@@ -18,6 +22,7 @@ class Inputs extends Component {
           className='bottomTextInput'
           value={this.props.bottomText}
           name='bottomText'
+          onFocus={this.handleFocus}
           onChange={this.handleChangeInput}
           />
       </div>
