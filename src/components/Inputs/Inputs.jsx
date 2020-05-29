@@ -8,12 +8,13 @@ class Inputs extends Component {
   render () {
     return (
       <div>
-        <p>{this.props.topText}</p>
         <input
+          className='topTextInput'
           name='topText'
           onChange={this.handleChangeInput}
           />
         <input
+          className='bottomTextInput'
           name='bottomText'
           onChange={this.handleChangeInput}
           />

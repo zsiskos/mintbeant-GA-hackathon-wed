@@ -1,5 +1,13 @@
 .App {
   text-align: center;
+  display: grid;
+  grid-template:
+  "header header header" 5em
+  ". image ." 500px
+  ". inputs ." 2em
+  ". button ." 2em
+  "footer footer footer" 2em
+  /1fr 5fr 1fr
 }
 
 .App-logo {
@@ -35,4 +43,16 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.image {
+  grid-area: image;
+}
+
+.inputs {
+  grid-area: inputs;
+}
+
+.footer {
+  grid-area: footer;
 }

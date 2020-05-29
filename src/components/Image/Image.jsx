@@ -7,8 +7,8 @@ const Image = props => {
 
   const styles = StyleSheet.create({
     container: {
-      height: '500px',
-      width: '500px',
+      height: '50vh',
+      width: '90vw',
       flex: 1,
       flexDirection: "column",
       justifyContent: 'center'

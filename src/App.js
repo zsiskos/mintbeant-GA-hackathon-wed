@@ -22,15 +22,31 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Image 
-        bottomText={this.state.bottomText}
-        topText={this.state.topText}
-        />
-        <Inputs 
+        <div className="header">
+          hello
+        </div>
+        <div className="image">
+          <Image
+          className="image" 
           bottomText={this.state.bottomText}
           topText={this.state.topText}
-          changeInput={this.changeInput}/>
-        <Button />
+          />
+        </div>
+        <div className="inputs">
+          <Inputs 
+            bottomText={this.state.bottomText}
+            topText={this.state.topText}
+            changeInput={this.changeInput}
+          />
+        </div>
+        <div className="button">
+          <Button
+            className="button"
+          />
+        </div>
+        <div className="footer">
+          footer
+        </div>
       </div>
     );
   }
