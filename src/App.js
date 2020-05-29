@@ -1,18 +1,39 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
-import domtoimage from 'dom-to-image-more';
-import Form from './components/form/Form'
-import Content from './components/content/content'
-import Result from './components/result/Result'
+import Image from '../src/components/Image/Image'
+import Inputs from '../src/components/Inputs/Inputs';
+import Button from '../src/components/Button/Button';
 
-function App() {
-  return (
-    <div className="App">
-      <Form />
-      <Content />
-      <Result />
-    </div>
-  );
+class App extends Component {
+  constructor(){
+    super();
+    this.state = {
+      topText: "top",
+      bottomText: "bottom",
+    };
+  }
+
+  changeInput = (event) => {
+    this.setState({
+      [event.target.name]: event.target.value
+    })
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <Image 
+        bottomText={this.state.bottomText}
+        topText={this.state.topText}
+        />
+        <Inputs 
+          bottomText={this.state.bottomText}
+          topText={this.state.topText}
+          changeInput={this.changeInput}/>
+        <Button />
+      </div>
+    );
+  }
 }
 
 export default App;
