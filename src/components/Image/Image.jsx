@@ -3,8 +3,8 @@ import { ImageBackground, StyleSheet, Text, View } from 'react-native';
 
 
 const Image = props => {
-  const image = { uri: "https://media.tenor.com/images/21c7c1bb5ab46a39b20abb72d94569a6/raw" };
-
+  let image = props.currentImage
+  console.log(image)
   const styles = StyleSheet.create({
     container: {
       height: '150px',

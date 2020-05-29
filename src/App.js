@@ -9,13 +9,13 @@ class App extends Component {
     super();
     this.state = {
       images: [],
-      currentImage: '',
+      currentImage: 'https://i.imgflip.com/1bhk.jpg',
       topText: "top text",
       bottomText: "bottom text",
       isLoaded: false
     };
   }
-
+  
   componentDidMount() {
     fetch("https://api.imgflip.com/get_memes")
       .then(res => res.json())
@@ -31,8 +31,7 @@ class App extends Component {
             error
           });
         }
-      )
-      
+      )  
   }
 
   changeInput = (event) => {
@@ -46,7 +45,12 @@ class App extends Component {
       [event.target.name]: ""
     })
   }
- 
+
+  randomImage = (event) => {
+    const randomIndex = Math.floor(Math.random() * this.state.images.length);
+    const image = this.state.images[randomIndex];
+    this.setState({currentImage: image.url});
+  }
 
   render() {
     return (
@@ -59,6 +63,7 @@ class App extends Component {
           className="image" 
           bottomText={this.state.bottomText}
           topText={this.state.topText}
+          currentImage={this.state.currentImage}
           />
         </div>
         <div className="inputs">
@@ -72,6 +77,7 @@ class App extends Component {
         <div className="button">
           <Button
             className="button"
+            randomImage={this.randomImage}
           />
         </div>
         <div className="footer">
