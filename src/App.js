@@ -3,6 +3,7 @@ import './App.css';
 import Image from '../src/components/Image/Image'
 import Inputs from '../src/components/Inputs/Inputs';
 import Button from '../src/components/Button/Button';
+import Album from '../src/components/Album/Album'
 
 class App extends Component {
   constructor(){
@@ -78,6 +79,11 @@ class App extends Component {
           <Button
             className="button"
             randomImage={this.randomImage}
+          />
+        </div>
+        <div className="album">
+          <Album 
+            images={this.state.images}
           />
         </div>
         <div className="footer">

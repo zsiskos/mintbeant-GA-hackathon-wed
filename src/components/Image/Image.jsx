@@ -4,7 +4,7 @@ import { ImageBackground, StyleSheet, Text, View } from 'react-native';
 
 const Image = props => {
   let image = props.currentImage
-  console.log(image)
+
   const styles = StyleSheet.create({
     container: {
       height: '150px',
