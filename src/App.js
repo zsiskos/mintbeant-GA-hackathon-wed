@@ -59,6 +59,9 @@ class App extends Component {
         <div className="header">
           make a meme
         </div>
+        <div className="footer">
+          <a href="https://github.com/zsiskos/mintbeant-GA-hackathon-wed" target="_blank">Built by zoë.Supernova </a>
+        </div>
         <div className="image">
           <Image
           className="image" 
@@ -85,9 +88,6 @@ class App extends Component {
           <Album 
             images={this.state.images}
           />
-        </div>
-        <div className="footer">
-          <a href="https://github.com/zsiskos/mintbeant-GA-hackathon-wed" target="_blank">Built by zoë.Supernova </a>
         </div>
       </div>
     );
