@@ -6,7 +6,7 @@ const Button = props => {
       <button>Download Meme</button>
       <button
         onClick={props.randomImage}
-      >New Image</button>
+      >Random</button>
     </div>
   )
 }
