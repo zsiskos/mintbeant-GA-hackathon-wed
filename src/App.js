@@ -36,8 +36,16 @@ class App extends Component {
   }
 
   changeInput = (event) => {
+    console.log(event)
     this.setState({
       [event.target.name]: event.target.value
+    })
+  }
+
+  selectImage = (event) => {
+    console.log(event)
+    this.setState({
+      currentImage: event.target.src
     })
   }
 
@@ -87,6 +95,7 @@ class App extends Component {
         <div className="album">
           <Album 
             images={this.state.images}
+            selectImage={this.selectImage}
           />
         </div>
       </div>
