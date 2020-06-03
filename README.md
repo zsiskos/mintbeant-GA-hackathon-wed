@@ -1,1 +1,0 @@
-# mintbeant-GA-hackathon-wed
