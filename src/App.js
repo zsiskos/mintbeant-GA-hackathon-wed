@@ -82,7 +82,7 @@ class App extends Component {
           <Inputs
             bottomText={this.state.bottomText}
             topText={this.state.topText}
-            onFocus={this.clearState} 
+            onClick={this.clearState} 
             changeInput={this.changeInput}
           />
         </div>

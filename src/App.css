@@ -5,7 +5,7 @@
   grid-gap: .5em;
   grid-template:
   ". header ." 5em
-  ". image ." 150px
+  ". image ." auto
   ". inputs ." 5em
   ". button ." 2em
   "footer footer footer" 3em
@@ -27,13 +27,19 @@
 
 .image {
   grid-area: image;
+  display: grid;
+  height: 400px;
 }
 
 .inputs {
   grid-area: inputs;
+  display: grid;
+  align-content: center;
 }
+
 Input {
   margin: 0.25rem;
+  justify-items: center;
 }
 
 .button {
@@ -74,5 +80,5 @@ Input {
 .footer > a:hover {
   text-decoration: none;
   font-family: 'Pacifico', cursive;
-  color: #454687;
+  color: turquoise;
 }

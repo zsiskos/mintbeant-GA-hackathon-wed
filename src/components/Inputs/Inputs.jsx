@@ -17,6 +17,7 @@ class Inputs extends Component {
           value={this.props.topText}
           name='topText'
           onChange={this.handleChangeInput}
+          onFocus={this.props.clearState}
           />
         <input
           className='bottomTextInput'

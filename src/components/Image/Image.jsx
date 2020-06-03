@@ -4,18 +4,9 @@ import { ImageBackground, StyleSheet, Text, View } from 'react-native';
 
 const Image = props => {
   let image = props.currentImage
-
   const styles = StyleSheet.create({
-    container: {
-      height: '150px',
-      width: 'auto',
-      flex: 1,
-      flexDirection: "column",
-      justifyContent: 'center'
-    },
     image: {
-      flex: 1,
-      objectFit: 'contain',
+      height: '100%',
       justifyContent: "space-between"
     },
     textTop: {
@@ -35,12 +26,11 @@ const Image = props => {
   });
   
   return (
-    <View style={styles.container}>
-      <ImageBackground source={image} style={styles.image}>
+    <ImageBackground source={image} style={styles.image}>
         <Text style={styles.textTop}>{props.topText}</Text>
         <Text style={styles.textBottom}>{props.bottomText}</Text>
-      </ImageBackground>
-    </View>  
+    </ImageBackground>
+
   )
 }
 
