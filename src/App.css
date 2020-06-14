@@ -28,7 +28,6 @@
 .image {
   grid-area: image;
   display: grid;
-  height: 400px;
 }
 
 .inputs {
