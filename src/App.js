@@ -11,8 +11,8 @@ class App extends Component {
     this.state = {
       images: [],
       currentImage: 'https://i.imgflip.com/1bhk.jpg',
-      topText: "top text",
-      bottomText: "bottom text",
+      topText: "Top Text",
+      bottomText: "Bottom Text",
       isLoaded: false
     };
   }
@@ -68,7 +68,7 @@ class App extends Component {
           make a meme
         </div>
         <div className="footer">
-          <a href="https://github.com/zsiskos/mintbeant-GA-hackathon-wed" target="_blank">Built by zoë.Supernova </a>
+          <a href="https://github.com/zsiskos/mintbeant-GA-hackathon-wed" target="_blank" rel="noopener noreferrer">Built by zoë.Supernova </a>
         </div>
         <div className="image">
           <Image
@@ -82,7 +82,7 @@ class App extends Component {
           <Inputs
             bottomText={this.state.bottomText}
             topText={this.state.topText}
-            onClick={this.clearState} 
+            clearState={this.clearState} 
             changeInput={this.changeInput}
           />
         </div>

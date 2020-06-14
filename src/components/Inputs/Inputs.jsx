@@ -17,14 +17,14 @@ class Inputs extends Component {
           value={this.props.topText}
           name='topText'
           onChange={this.handleChangeInput}
-          onFocus={this.props.clearState}
+          onFocus={this.handleFocus}
           />
         <input
           className='bottomTextInput'
           value={this.props.bottomText}
           name='bottomText'
-          onFocus={this.handleFocus}
           onChange={this.handleChangeInput}
+          onFocus={this.handleFocus}
           />
       </div>
     )
