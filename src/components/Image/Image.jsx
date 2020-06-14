@@ -5,9 +5,17 @@ import { ImageBackground, StyleSheet, Text, View } from 'react-native';
 const Image = props => {
   let image = props.currentImage
   const styles = StyleSheet.create({
+    container: {
+      maxWidth: '100%',
+      height: 'auto',
+      border: '1px solid red'
+    },
     image: {
+      maxWidth: 'auto',
       height: '100%',
-      justifyContent: "space-between"
+      resizeMode: 'fit',
+      justifyContent:  'space-between',
+      border: '3px dashed lime'
     },
     textTop: {
       color: "white",
@@ -26,11 +34,11 @@ const Image = props => {
   });
   
   return (
-    <ImageBackground source={image} style={styles.image}>
-        <Text style={styles.textTop}>{props.topText}</Text>
-        <Text style={styles.textBottom}>{props.bottomText}</Text>
-    </ImageBackground>
-
+    <div>
+      <img src={image} style={{'max-height': '500px', 'object-fit': 'contain'}} />
+      <Text style={styles.textTop}>{props.topText}</Text>
+      <Text style={styles.textBottom}>{props.bottomText}</Text>
+    </div>
   )
 }
 
