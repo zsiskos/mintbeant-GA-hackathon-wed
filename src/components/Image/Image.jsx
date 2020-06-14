@@ -21,20 +21,28 @@ const Image = props => {
       color: "white",
       'font-family': 'Impact, Charcoal, sans-serif',
       '-webkit-text-stroke': '1px black',  
-      fontSize: '2rem',
+      fontSize: '3rem',
       fontWeight: "bold",
+      position: 'absolute',
+      top: '7%',
+      left: '50%',
+      transform: 'translate(-50%, -50%)'
     },
     textBottom: {
       color: "white",
       'font-family': 'Impact, Charcoal, sans-serif',
       '-webkit-text-stroke': '1px black',
-      fontSize: '2rem',
-      fontWeight: "bold"
+      fontSize: '3rem',
+      fontWeight: "bold",
+      position: 'absolute',
+      top: '90%',
+      left: '50%',
+      transform: 'translate(-50%, -50%)'
     }
   });
   
   return (
-    <div>
+    <div style={{'position': 'relative', 'textAlign': 'center'}}>
       <img src={image} style={{'max-height': '500px', 'object-fit': 'contain'}} />
       <Text style={styles.textTop}>{props.topText}</Text>
       <Text style={styles.textBottom}>{props.bottomText}</Text>
