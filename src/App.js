@@ -61,6 +61,20 @@ class App extends Component {
     this.setState({currentImage: image.url});
   }
 
+  // handleMemeGeneration() {
+  //   if (resultContainerRef.current.childNodes.length > 0) {
+  //     resultContainerRef.current.removeChild(
+  //       resultContainerRef.current.childNodes[0]
+  //     );
+  //   }
+  //   domtoimage.toPng(contentContainerRef.current).then((dataUrl) => {
+  //     const img = new Image();
+  //     img.src = dataUrl;
+  //     resultContainerRef.current.appendChild(img);
+  //     setIsMemeGenerated(true);
+  //   });
+  // }
+
   render() {
     return (
       <div className="App">
