@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/mintbeant-GA-hackathon-wed/static/css/main.6afa6d8b.chunk.css",
+    "main.js": "/mintbeant-GA-hackathon-wed/static/js/main.9ff46220.chunk.js",
+    "main.js.map": "/mintbeant-GA-hackathon-wed/static/js/main.9ff46220.chunk.js.map",
+    "runtime-main.js": "/mintbeant-GA-hackathon-wed/static/js/runtime-main.34fdeb5d.js",
+    "runtime-main.js.map": "/mintbeant-GA-hackathon-wed/static/js/runtime-main.34fdeb5d.js.map",
+    "static/js/2.6ff8464d.chunk.js": "/mintbeant-GA-hackathon-wed/static/js/2.6ff8464d.chunk.js",
+    "static/js/2.6ff8464d.chunk.js.map": "/mintbeant-GA-hackathon-wed/static/js/2.6ff8464d.chunk.js.map",
+    "index.html": "/mintbeant-GA-hackathon-wed/index.html",
+    "precache-manifest.64dd4c0f291e3dbccabf20c292e332f7.js": "/mintbeant-GA-hackathon-wed/precache-manifest.64dd4c0f291e3dbccabf20c292e332f7.js",
+    "service-worker.js": "/mintbeant-GA-hackathon-wed/service-worker.js",
+    "static/css/main.6afa6d8b.chunk.css.map": "/mintbeant-GA-hackathon-wed/static/css/main.6afa6d8b.chunk.css.map",
+    "static/js/2.6ff8464d.chunk.js.LICENSE.txt": "/mintbeant-GA-hackathon-wed/static/js/2.6ff8464d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.34fdeb5d.js",
+    "static/js/2.6ff8464d.chunk.js",
+    "static/css/main.6afa6d8b.chunk.css",
+    "static/js/main.9ff46220.chunk.js"
+  ]
+}
